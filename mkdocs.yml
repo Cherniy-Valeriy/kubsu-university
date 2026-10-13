@@ -1,0 +1,32 @@
+site_name: КубГУ | Учебные работы
+site_description: Учебное портфолио
+site_author: Черный Валерий Робертович
+
+theme:
+  name: material
+  language: ru
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Тёмная тема
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Светлая тема
+
+nav:
+  - Главная: index.md
+  - 7 семестр:
+      - Обзор: semester-7/index.md
+      - Тестовая дисциплина:
+          - О дисциплине: semester-7/subject-1/index.md
+          - Лабораторная №1: semester-7/subject-1/lab-01.md
