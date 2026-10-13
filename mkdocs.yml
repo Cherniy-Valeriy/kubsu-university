@@ -8,7 +8,6 @@ theme:
   language: ru
   features:
     - navigation.sections
-    - navigation.expand
     - navigation.path
     - search.suggest
     - search.highlight
@@ -24,10 +23,45 @@ theme:
         icon: material/brightness-4
         name: Светлая тема
 
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
 nav:
   - Главная: index.md
+
   - 7 семестр:
       - Обзор: semester-7/index.md
-      - Тестовая дисциплина:
-          - О дисциплине: semester-7/subject-1/index.md
-          - Лабораторная №1: semester-7/subject-1/lab-01.md
+
+      - Информационные технологии и системы безопасности:
+          - О дисциплине: semester-7/information-security/index.md
+          - Лабораторные работы: semester-7/information-security/labs/index.md
+
+      - Теория систем и интеграция:
+          - О дисциплине: semester-7/systems-theory/index.md
+          - Лабораторные работы: semester-7/systems-theory/labs/index.md
+          - Семинарские занятия: semester-7/systems-theory/seminars/index.md
+
+      - Технологии ИИ и экспертные системы:
+          - О дисциплине: semester-7/artificial-intelligence/index.md
+          - Лабораторные работы: semester-7/artificial-intelligence/labs/index.md
+
+      - Анализ больших данных:
+          - О дисциплине: semester-7/big-data/index.md
+          - Лабораторные работы: semester-7/big-data/labs/index.md
+
+      - Администрирование информационных систем:
+          - О дисциплине: semester-7/information-systems-admin/index.md
+          - Лабораторные работы: semester-7/information-systems-admin/labs/index.md
+          - Семинарские занятия: semester-7/information-systems-admin/seminars/index.md
+
+      - Разработка серверных приложений:
+          - О дисциплине: semester-7/server-development/index.md
+          - Лабораторные работы: semester-7/server-development/labs/index.md
